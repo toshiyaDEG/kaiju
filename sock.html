@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sock</title>
+</head>
+<body>
+    <div class="monster-lab">
+        <img src="./tenor.gif"/>
+        <button type="button"><a id="a1" href="./Monsters.html">¿Jugar de nuevo?</a></button>
+    </div>
+
+    <script>
+        let txt = document.getElementById('a1')
+        txt.addEventListener('mouseover', changeTxt)
+
+        function changeTxt() {
+            console.log('entra')
+            txt.innerHTML = '¡Sí!'
+        }
+
+    </script>
+</body>
+</html>
+
+<style>
+    body {
+        background-color: #0c0c0c;
+    }
+
+    .monster-lab {
+        margin:auto;
+        width: 700px;
+        height: 700px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .monster-lab button {
+        width: 150px;
+        height: 70px;
+        border:none;
+        background: royalblue;
+        border-radius: 10px;
+    }
+
+    .monster-lab button a {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+</style>
